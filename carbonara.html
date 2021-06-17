@@ -18,6 +18,10 @@
            <!--<p id="recette"></p>--> 
             <p id="liste"></p>
             <p id="tableau"></p>
+            <p id="box"></p>
+            <button onclick="fsort()">ALex is the best</button>
+            <button onclick="bcolor()">Change background color</button>
+
         </div>
         <script>
             let Ingredients = document.getElementById("recette");
@@ -34,7 +38,24 @@
             recette.sort();
             console.log(y + "." + "" + recette[i]);
             document.getElementById("tableau").innerHTML = document.getElementById("tableau").innerHTML + y + "." + " " + recette[i] + "<br/>";
+
+            
+
             };
+            
+            function fsort(){
+                //recette.reverse(); 
+                document.getElementById("tableau").innerHTML = recette.reverse(); 
+                
+            }
+
+            function bcolor(){
+                document.getElementById("tableau").style.color = "rgb(238,174,202)";
+            }
+
+
+           
+    
         </script>
        
     </body>
